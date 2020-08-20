@@ -4,12 +4,9 @@ public class WordText {
     private final String string;
     private final int count;
 
-    public String getString() {
-        return string;
-    }
-
-    public int getCount() {
-        return count;
+    public WordText(String string, int count) {
+        this.string = string;
+        this.count = count;
     }
 
     @Override
@@ -22,8 +19,13 @@ public class WordText {
         return super.equals(obj);
     }
 
-    public WordText(String string, int count) {
-        this.string = string;
-        this.count = count;
+    public String getString() {
+        return string;
     }
+
+    public int getCount() {
+        return count;
+    }
+
 }
+
